@@ -1,0 +1,78 @@
+<!-- <!DOCTYPE html>
+<html> 
+<head>
+    
+</head>
+
+<body>
+    <input type="number" id="input">
+    <button id="submit"> submit </button>
+    <ul id="output">
+        <li >
+           1
+        </li>
+        <li>
+            2
+        </li>
+
+    </ul>
+
+
+    <script>
+
+        function display(){
+          var disValue = document.getElementById("input").value;
+
+         document.getElementById("output").innerHTML=document.getElementById("output").innerHTML + "<li>" + disValue + "</li>";
+
+         document.getElementById("input").value="";
+
+
+
+        }
+
+        document.getElementById("submit").addEventListener("click", display);
+
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <button id="submit">add ten</button>
+        <input type="number" id="input">
+        <p id="output">0</p>
+        <script>
+
+            var i=0;
+
+            function sum(){
+
+               var initial=Number(document.getElementById("input").value)
+
+                  i=i+10+initial;
+                  document.getElementById("output").innerHTML=i
+
+                  document.getElementById("input").value="";
+            }
+
+            document.getElementById("submit").addEventListener("click",sum);
+
+        </script>
+    </body>
+</html>
